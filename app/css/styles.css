@@ -404,8 +404,8 @@ object-fit: contain;
     }
     
 
-     /* Estilos generales */
-  object {
+    /* Estilos generales */
+  embed {
     width: 100%;
     height: 500px; /* Altura predeterminada */
     max-width: 100%;
@@ -416,13 +416,13 @@ object-fit: contain;
 
   /* Asegura que el PDF se ajuste en pantallas más pequeñas */
   @media screen and (max-width: 768px) {
-    object {
+    embed {
       height: 60vh; /* Ajusta la altura en pantallas medianas (tabletas) */
     }
   }
 
   @media screen and (max-width: 480px) {
-    object {
+    embed {
       height: 50vh; /* Ajusta la altura en pantallas pequeñas (móviles) */
     }
   }

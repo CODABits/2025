@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    
 }
 
 body {
@@ -14,8 +15,9 @@ body {
     align-items: center;
     text-align: center;
     margin: 0;
+    overflow-x: hidden;
     padding: 0;
-    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+    min-height: 100%; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
 }
 
 h1 {
@@ -81,8 +83,10 @@ h1 {
 }
 
 .content {
-    margin: 20px;
+    margin: 0.3125em;
     font-size: 1.2em;
+  
+
 }
 .circle-info-container {
 display: flex;
@@ -204,6 +208,7 @@ position: relative;
     position: fixed;
     bottom: 0;
     left: 0;
+  
 }
 
 
@@ -216,24 +221,6 @@ margin-bottom: 100px; /* Ajusta este valor según sea necesario */
 }
 
 
-.empresa {
-width: 75px; /* Tamaño del logotipo */
-height: 75px; /* Tamaño del logotipo */
-border-radius: 50%;
-background-color: #fff;
-border: 2px solid #00c6ff; /* Color del borde */
-display: flex;
-align-items: center;
-justify-content: center;
-overflow: hidden;
-}
-
-.logo-lolous {
-display: flex;
-justify-content: center;
-gap: 15px; /* Espacio entre los logotipos */
-padding: 20px;
-}
 
 .empresa {
 width: 75px; /* Tamaño del logotipo */
@@ -258,6 +245,9 @@ object-fit: contain;
     justify-content: center; /* Centra los elementos horizontalmente */
     gap: 20px; /* Espacio entre los elementos */
     margin-bottom: 20px; /* Espacio en la parte inferior */
+    position: relative;
+    
+    
 }
 
 .category {
@@ -272,7 +262,7 @@ object-fit: contain;
 .open-popup-btn {
     position: fixed;
     bottom: 20px; /* Ajusta la posición desde el fondo */
-    right: 20px; /* Ajusta la posición desde el borde derecho */
+    right: 100px; /* Ajusta la posición desde el borde derecho */
     width: 50px; /* Tamaño del botón */
     height: 50px; /* Tamaño del botón */
     background-color: #ff6f61; /* Color del botón */
@@ -394,3 +384,48 @@ object-fit: contain;
     display: block; /* Hace que el botón ocupe todo el ancho disponible */
     margin: 20px auto 0; /* Centra el botón horizontalmente y agrega espacio arriba */
 }
+
+
+
+
+ 
+  
+    /* Ajustes para textos y títulos */
+    h1, h2, h3 {
+      font-size: 1.5em; } 
+
+
+
+      @media screen and (max-width: 768px) {
+        /* Cambia estilos para pantallas más pequeñas */
+        body {
+            background-color: lightblue;
+        }
+    }
+    
+
+     /* Estilos generales */
+  object {
+    width: 100%;
+    height: 500px; /* Altura predeterminada */
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Asegura que el PDF se ajuste en pantallas más pequeñas */
+  @media screen and (max-width: 768px) {
+    object {
+      height: 60vh; /* Ajusta la altura en pantallas medianas (tabletas) */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    object {
+      height: 50vh; /* Ajusta la altura en pantallas pequeñas (móviles) */
+    }
+  }
+      
+
+      
